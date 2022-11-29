@@ -5,5 +5,5 @@ for (var i = 1; i <= 20; i++) {
       divisores++
     }
   }
-  console.log("O número", i, "possui", divisores, "divisor(es)!")
+  console.log("O número", i, "possui", divisores, "divisor(es)!");
 }
