@@ -1,14 +1,9 @@
-// Demonstração do 'continue'
-
-cont = 0 // Inicializa cont com 1
-
-while (cont <= 10) { // Laço de 1 até 10
-
-  cont++ // Incrementa cont
-
-  if (cont % 2 == 0) { // Checa se cont é múltiplo de 2
-    continue // Pule esta interação
+for (var i = 1; i <= 10; i++) {
+  divisores = 0
+  for (var j = 1; j <= 10; j++) {
+    if (i % j == 0) {
+      divisores++
+    }
   }
-  console.log(cont) // Imprime cont
-
+  console.log("O número", i, "possui", divisores, "divisor(es)!")
 }
