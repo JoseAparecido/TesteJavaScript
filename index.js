@@ -1,9 +1,7 @@
-for (var i = 1; i <= 10; i++) {
-  divisores = 0
-  for (var j = 1; j <= 10; j++) {
-    if (i % j == 0) {
-      divisores++
-    }
+console.log("Divisores do número 100: ");
+
+for (var j = 1; j <= 100; j++) {
+  if (100 % j == 0) {
+    console.log(j)
   }
-  console.log("O número", i, "possui", divisores, "divisor(es)!")
 }
