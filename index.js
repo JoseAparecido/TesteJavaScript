@@ -1,13 +1,14 @@
-// Demonstração do 'break'
+// Demonstração do 'continue'
 
-cont = 1 // Inicializa cont com 1
+cont = 0 // Inicializa cont com 1
 
 while (cont <= 10) { // Laço de 1 até 10
-  // Checa se cont é 5
-  if (cont == 7) {
-    // Sai do laço se cont for 5
-    break
+
+  cont++ // Incrementa cont
+
+  if (cont % 2 == 0) { // Checa se cont é múltiplo de 2
+    continue // Pule esta interação
   }
   console.log(cont) // Imprime cont
-  cont++ // Incrementa cont
+
 }
