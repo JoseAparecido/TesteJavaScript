@@ -1,22 +1,13 @@
-// Comandos de Decisão Aninhados -  Classificação de Triângulos
+// Demonstração do 'break'
 
-// Importando o módulo prompt-sync
-const prompt = require('prompt-sync')();
+cont = 1 // Inicializa cont com 1
 
-x = parseFloat(prompt("Digite o valor de x: "))
-y = parseFloat(prompt("Digite o valor de y: "))
-z = parseFloat(prompt("Digite o valor de z: "))
-
-// Testa a propriedade para verificar se é um triângulo
-if ((x + y > z) && (x + z > y) && (y + z > x)) {
-  if ((x == y) && (y == z)) {
-    console.log("Triângulo Equilátero!")
-  } else if ((x == y) || (x == z) || (y == z)) {
-    console.log("Triângulo Isósceles!")
-  } else {
-    console.log("Triângulo Escaleno!")
+while (cont <= 10) { // Laço de 1 até 10
+  // Checa se cont é 5
+  if (cont == 7) {
+    // Sai do laço se cont for 5
+    break
   }
-  // Caso não seja triângulo
-} else {
-  console.log("Os lados não formam um triângulo!")
+  console.log(cont) // Imprime cont
+  cont++ // Incrementa cont
 }
